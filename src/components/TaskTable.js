@@ -6,8 +6,8 @@ import { format } from 'date-fns';
 function TaskTable({ tasks, updateTask, deleteTask }) {
   const [order, setOrder] = React.useState('asc');
   const [orderBy, setOrderBy] = React.useState('dueDate');
-  const [open, setOpen] = useState(false); // состояние для открытия модального окна
-  const [currentTask, setCurrentTask] = useState(null); // текущая задача для редактирования
+  const [open, setOpen] = useState(false); 
+  const [currentTask, setCurrentTask] = useState(null); 
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === 'asc';
